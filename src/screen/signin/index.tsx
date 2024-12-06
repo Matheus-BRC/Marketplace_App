@@ -57,7 +57,7 @@ export function SignIn() {
           <Text style={styles.label}>
             Lembrar de Mim
           </Text>
-          <TouchableOpacity onPress={handleNavigate}>
+          <TouchableOpacity onPress={() => navigation.navigate('Recover')}>
             <Text style={styles.label}>
               Esqueci Minha Senha
             </Text>
@@ -68,7 +68,7 @@ export function SignIn() {
       <View style={styles.controlsbutons}>
         <Button
           title="Continuar"
- 
+          onPress={() => navigation.navigate('AddressRegister')}
         />
       </View>
       <Image
